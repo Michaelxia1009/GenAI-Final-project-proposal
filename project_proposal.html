@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DreamPulse - Final Project Proposal</title>
+  <style>
+    :root {
+      --bg: #f4f6ff;
+      --panel: #ffffff;
+      --text: #1a1a2a;
+      --muted: #596080;
+      --primary: #5b49ff;
+      --primary-soft: #e8e5ff;
+      --accent: #ff4d9a;
+      --line: #d7dcf5;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 2rem 1rem 3rem;
+      font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--text);
+      background: linear-gradient(145deg, #f7f9ff 0%, #f2eeff 100%);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1024px;
+      margin: 0 auto;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(54, 44, 132, 0.12);
+    }
+
+    header {
+      padding: 2rem;
+      background: radial-gradient(circle at top right, #f7c8ff 0%, #d4d3ff 42%, #eef2ff 100%);
+      border-bottom: 1px solid var(--line);
+    }
+
+    h1 {
+      margin: 0 0 0.4rem;
+      font-size: 2rem;
+      line-height: 1.2;
+      letter-spacing: 0.01em;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: #343a67;
+      font-size: 1.04rem;
+      font-weight: 500;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 0.5rem;
+      padding: 1rem 1rem 0;
+      border-bottom: 1px solid var(--line);
+      background: #f9faff;
+    }
+
+    .tab-button {
+      border: 1px solid transparent;
+      background: transparent;
+      color: var(--muted);
+      border-radius: 10px 10px 0 0;
+      padding: 0.72rem 1.05rem;
+      font-weight: 600;
+      font-size: 0.96rem;
+      cursor: pointer;
+    }
+
+    .tab-button.active {
+      color: var(--primary);
+      background: var(--primary-soft);
+      border-color: #c8c1ff;
+    }
+
+    .tab-panel {
+      display: none;
+      padding: 1.5rem 2rem 2rem;
+    }
+
+    .tab-panel.active {
+      display: block;
+    }
+
+    h2 {
+      margin-top: 0.2rem;
+      margin-bottom: 1rem;
+      color: #221f5f;
+      font-size: 1.35rem;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      text-align: justify;
+    }
+
+    .team-name {
+      margin: 0 0 1rem;
+      padding: 0.85rem 1rem;
+      border-left: 4px solid var(--accent);
+      background: #fff4fa;
+      font-weight: 600;
+      color: #6b2251;
+      border-radius: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 0.8rem;
+      background: #fff;
+    }
+
+    th, td {
+      border: 1px solid var(--line);
+      padding: 0.75rem;
+      vertical-align: top;
+      text-align: left;
+    }
+
+    th {
+      background: #eef1ff;
+      color: #2d2f65;
+      font-weight: 700;
+    }
+
+    .storyboard-table th:nth-child(1),
+    .storyboard-table td:nth-child(1) {
+      width: 26%;
+    }
+
+    .storyboard-table th:nth-child(2),
+    .storyboard-table td:nth-child(2) {
+      width: 39%;
+    }
+
+    .storyboard-table th:nth-child(3),
+    .storyboard-table td:nth-child(3) {
+      width: 35%;
+    }
+
+    .anchor-image {
+      width: 100%;
+      max-width: 190px;
+      aspect-ratio: 9 / 16;
+      object-fit: cover;
+      border: 1px solid #c9d0f5;
+      border-radius: 10px;
+      display: block;
+      background: #f2f4ff;
+    }
+
+    .scene-label {
+      font-size: 0.83rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 0.4rem;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 1rem 0.55rem 2rem;
+      }
+
+      header,
+      .tab-panel {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+
+      .tabs {
+        padding-left: 0.5rem;
+      }
+
+      h1 {
+        font-size: 1.55rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>DreamPulse: AI Dream-to-Story Media Studio</h1>
+      <p class="subtitle">Turn blurry midnight memories into surreal videos people actually want to share.</p>
+    </header>
+
+    <nav class="tabs" aria-label="Project sections">
+      <button class="tab-button active" type="button" data-tab="Overview">Overview</button>
+      <button class="tab-button" type="button" data-tab="Team">Team</button>
+      <button class="tab-button" type="button" data-tab="Storyboard">Storyboard</button>
+    </nav>
+
+    <section id="Overview" class="tab-panel active">
+      <h2>Overview</h2>
+      <p>
+        The motivation behind DreamPulse is to bridge dream journaling and entertainment by transforming a solitary, often tedious habit into an engaging digital ritual. Dreams are surreal, visual, and naturally narrative-driven, yet traditional text journals flatten that experience and fail to preserve its emotional intensity. Our project addresses the problem of rapidly fading dream memories by giving users a playful, immediate way to capture their subconscious moments before they disappear.
+      </p>
+      <p>
+        The primary value is user happiness through creative expression and social connection. Instead of treating dreams as clinical data, the platform embraces absurdity and imagination, generating polished content that feels magical and personal. Users gain a joyful outlet in the morning, and they can share dream highlights and interpretations on social platforms to spark conversation, amusement, and curiosity with friends and followers, creating a natural viral loop.
+      </p>
+      <p>
+        The platform is built as a multimodal journey: users input dreams through voice, text, or image reference; a visual-style selector proposes distinct aesthetics and supports fast regeneration; a surreal storyline engine converts fragmented memories into cinematic scene sequences; and integrated media APIs produce social-ready videos or images with narration. A final mystical interpretation module maps symbols to playful esoteric systems (Tarot, constellations, or I Ching), adding a memorable and highly shareable finale.
+      </p>
+    </section>
+
+    <section id="Team" class="tab-panel">
+      <h2>Team</h2>
+      <p class="team-name">Team Name: 404 team not found</p>
+      <table>
+        <thead>
+          <tr>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Email</th>
+            <th>SIS ID</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Zhihan</td>
+            <td>Xia</td>
+            <td>michael.xia@yale.edu</td>
+            <td>zx258</td>
+          </tr>
+          <tr>
+            <td>Yiyi</td>
+            <td>Shen</td>
+            <td>yiyi.shen@yale.edu</td>
+            <td>ys868</td>
+          </tr>
+          <tr>
+            <td>Paul</td>
+            <td>Li</td>
+            <td>paul.li@yale.edu</td>
+            <td>pl656</td>
+          </tr>
+          <tr>
+            <td>Sophie</td>
+            <td>Gao</td>
+            <td>sophie.gao@yale.edu</td>
+            <td>yg467</td>
+          </tr>
+          <tr>
+            <td>Leo</td>
+            <td>Li</td>
+            <td>leo.li.pl638@yale.edu</td>
+            <td>pl638</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="Storyboard" class="tab-panel">
+      <h2>Storyboard</h2>
+      <table class="storyboard-table">
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>Scene Description</th>
+            <th>Narration</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="scene-label">Scene 1 · 0-10s</div>
+              <img class="anchor-image" src="assets/scene_01_dream_capture.svg" alt="Scene 1 anchor image showing user waking and recording dream">
+            </td>
+            <td>
+              <strong>Shot type:</strong> Tight handheld close-up, vertical frame.<br>
+              <strong>Setting:</strong> Early-morning bedroom with soft neon glow from phone screen.<br>
+              <strong>Action:</strong> User wakes up startled, opens DreamPulse, and speaks a chaotic dream memory while animated keywords materialize around the phone.
+            </td>
+            <td>
+              "I just dreamed I was surfing on a giant koi fish through a city in the clouds... wait, don't let me forget this."
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="scene-label">Scene 2 · 10-20s</div>
+              <img class="anchor-image" src="assets/scene_02_style_picker.svg" alt="Scene 2 anchor image showing artistic style options">
+            </td>
+            <td>
+              <strong>Shot type:</strong> Dynamic screen-record style insert with quick zoom cuts.<br>
+              <strong>Setting:</strong> DreamPulse style-selection interface with three cards (mythic watercolor, cyber-surreal, vaporwave noir).<br>
+              <strong>Action:</strong> User swipes through style options, taps one, then the storyboard scenes auto-assemble as cinematic panels.
+            </td>
+            <td>
+              "Pick a vibe in one tap, and DreamPulse turns your sleepy fragments into a full visual storyline."
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="scene-label">Scene 3 · 20-30s</div>
+              <img class="anchor-image" src="assets/scene_03_share_magic.svg" alt="Scene 3 anchor image showing dual sharing options for dream video or image interpretation">
+            </td>
+            <td>
+              <strong>Shot type:</strong> Medium over-shoulder shot to split-card UI reveal, then end-card.<br>
+              <strong>Setting:</strong> Share composer with two polished cards: "Video + Voiceover" and "Dream Image + Interpretation" over a mystical Tarot + constellation background.<br>
+              <strong>Action:</strong> User toggles between export cards, previews both outputs, and chooses either a narrated dream video or a stylized interpretation image before posting to social media as reactions pop in.
+            </td>
+            <td>
+              "Pick your format - share a narrated dream video or a mystical interpretation image - then post the version that matches your vibe."
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script>
+    const buttons = document.querySelectorAll(".tab-button");
+    const panels = document.querySelectorAll(".tab-panel");
+
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const targetId = button.dataset.tab;
+
+        buttons.forEach((b) => b.classList.remove("active"));
+        panels.forEach((panel) => panel.classList.remove("active"));
+
+        button.classList.add("active");
+        document.getElementById(targetId).classList.add("active");
+      });
+    });
+  </script>
+</body>
+</html>
