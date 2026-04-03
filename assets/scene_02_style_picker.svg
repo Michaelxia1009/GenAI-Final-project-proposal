@@ -1,0 +1,32 @@
+<svg width="540" height="960" viewBox="0 0 540 960" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="540" y2="960" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#24195F"/>
+      <stop offset="1" stop-color="#7337A8"/>
+    </linearGradient>
+    <linearGradient id="cardA" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFD99F"/>
+      <stop offset="1" stop-color="#FF8DB8"/>
+    </linearGradient>
+    <linearGradient id="cardB" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#9FEBFF"/>
+      <stop offset="1" stop-color="#6EA2FF"/>
+    </linearGradient>
+    <linearGradient id="cardC" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#D4B6FF"/>
+      <stop offset="1" stop-color="#8F70FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="540" height="960" fill="url(#bg2)"/>
+  <text x="270" y="88" text-anchor="middle" fill="#F6EEFF" font-size="36" font-family="Arial, sans-serif" font-weight="700">Scene 2</text>
+  <text x="270" y="130" text-anchor="middle" fill="#E8DEFF" font-size="24" font-family="Arial, sans-serif">Style Picker</text>
+  <rect x="95" y="220" width="350" height="145" rx="18" fill="url(#cardA)"/>
+  <rect x="95" y="395" width="350" height="145" rx="18" fill="url(#cardB)"/>
+  <rect x="95" y="570" width="350" height="145" rx="18" fill="url(#cardC)"/>
+  <text x="120" y="305" fill="#2B1F43" font-size="24" font-family="Arial, sans-serif" font-weight="700">Mythic Watercolor</text>
+  <text x="120" y="480" fill="#15315F" font-size="24" font-family="Arial, sans-serif" font-weight="700">Cyber Surreal</text>
+  <text x="120" y="655" fill="#2C1457" font-size="24" font-family="Arial, sans-serif" font-weight="700">Vaporwave Noir</text>
+  <circle cx="420" cy="642" r="20" fill="#FFFFFF" opacity="0.95"/>
+  <path d="M410 642L418 650L432 636" stroke="#6D3BE5" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="270" y="884" text-anchor="middle" fill="#E8DEFF" font-size="22" font-family="Arial, sans-serif">Swipe, tap, auto-generate</text>
+</svg>

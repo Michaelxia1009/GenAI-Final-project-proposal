@@ -1,0 +1,72 @@
+<svg width="540" height="960" viewBox="0 0 540 960" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg3" x1="32" y1="40" x2="504" y2="920" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#161A4A"/>
+      <stop offset="0.52" stop-color="#4B2D8F"/>
+      <stop offset="1" stop-color="#9E3B7F"/>
+    </linearGradient>
+    <radialGradient id="haloA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(118 190) rotate(35) scale(180 140)">
+      <stop stop-color="#7BE7FF" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#7BE7FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="haloB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(430 300) rotate(20) scale(210 170)">
+      <stop stop-color="#FF90C9" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#FF90C9" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="panelStroke" x1="70" y1="188" x2="470" y2="810" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E8E9FF" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#FFE4F2" stop-opacity="0.24"/>
+    </linearGradient>
+    <linearGradient id="cardLeft" x1="92" y1="312" x2="246" y2="676" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#84EDFF"/>
+      <stop offset="1" stop-color="#5678F6"/>
+    </linearGradient>
+    <linearGradient id="cardRight" x1="294" y1="312" x2="448" y2="676" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFC8E4"/>
+      <stop offset="1" stop-color="#F18882"/>
+    </linearGradient>
+    <linearGradient id="cta" x1="140" y1="760" x2="400" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B89BFF"/>
+      <stop offset="1" stop-color="#F39ACE"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="540" height="960" fill="url(#bg3)"/>
+  <ellipse cx="118" cy="190" rx="180" ry="140" fill="url(#haloA)"/>
+  <ellipse cx="430" cy="300" rx="210" ry="170" fill="url(#haloB)"/>
+
+  <circle cx="96" cy="108" r="3" fill="#FFFFFF" fill-opacity="0.8"/>
+  <circle cx="438" cy="132" r="2.6" fill="#FFFFFF" fill-opacity="0.75"/>
+  <circle cx="466" cy="196" r="2.2" fill="#FFFFFF" fill-opacity="0.7"/>
+  <circle cx="72" cy="228" r="2.3" fill="#FFFFFF" fill-opacity="0.72"/>
+
+  <text x="270" y="88" text-anchor="middle" fill="#FCEFFF" font-size="36" font-family="Arial, sans-serif" font-weight="700">Scene 3</text>
+  <text x="270" y="126" text-anchor="middle" fill="#EADFFC" font-size="22" font-family="Arial, sans-serif">Share your dream, your way</text>
+
+  <rect x="70" y="188" width="400" height="620" rx="32" fill="#FFFFFF" fill-opacity="0.08" stroke="url(#panelStroke)" stroke-width="2"/>
+
+  <rect x="92" y="312" width="154" height="364" rx="24" fill="url(#cardLeft)"/>
+  <rect x="294" y="312" width="154" height="364" rx="24" fill="url(#cardRight)"/>
+
+  <rect x="118" y="362" width="102" height="86" rx="16" fill="#FFFFFF" fill-opacity="0.94"/>
+  <circle cx="169" cy="405" r="24" fill="#4F75F2"/>
+  <polygon points="161,392 161,418 181,405" fill="#FFFFFF"/>
+  <rect x="118" y="464" width="102" height="8" rx="4" fill="#EAF4FF"/>
+  <rect x="118" y="480" width="74" height="8" rx="4" fill="#D8E8FF"/>
+
+  <rect x="320" y="362" width="102" height="86" rx="16" fill="#FFFFFF" fill-opacity="0.92"/>
+  <rect x="333" y="376" width="76" height="58" rx="10" fill="#FFE6F2"/>
+  <path d="M340 427L357 410L372 423L386 412L401 427" stroke="#C45A84" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="390" cy="392" r="7" fill="#F6A6C4"/>
+  <rect x="320" y="464" width="102" height="8" rx="4" fill="#FFE4EF"/>
+  <rect x="320" y="480" width="76" height="8" rx="4" fill="#FFD2E5"/>
+
+  <text x="169" y="548" text-anchor="middle" fill="#0F2C63" font-size="20" font-family="Arial, sans-serif" font-weight="700">Video</text>
+  <text x="169" y="575" text-anchor="middle" fill="#133673" font-size="18" font-family="Arial, sans-serif">+ Voiceover</text>
+
+  <text x="371" y="548" text-anchor="middle" fill="#5A1A34" font-size="20" font-family="Arial, sans-serif" font-weight="700">Image</text>
+  <text x="371" y="575" text-anchor="middle" fill="#6A2440" font-size="18" font-family="Arial, sans-serif">+ Interpretation</text>
+
+  <rect x="140" y="734" width="260" height="52" rx="26" fill="url(#cta)"/>
+  <text x="270" y="767" text-anchor="middle" fill="#2C1543" font-size="20" font-family="Arial, sans-serif" font-weight="700">Choose format and share</text>
+</svg>

@@ -1,0 +1,22 @@
+<svg width="540" height="960" viewBox="0 0 540 960" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="540" y2="960" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#171A45"/>
+      <stop offset="1" stop-color="#4F3DBA"/>
+    </linearGradient>
+    <linearGradient id="phoneGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#84F8FF"/>
+      <stop offset="1" stop-color="#B7C1FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="540" height="960" fill="url(#bg1)"/>
+  <circle cx="85" cy="125" r="48" fill="#FFE8A3" opacity="0.85"/>
+  <rect x="85" y="560" width="370" height="260" rx="30" fill="#0F1234" stroke="#98A2FF" stroke-width="4"/>
+  <rect x="145" y="604" width="250" height="150" rx="16" fill="url(#phoneGlow)"/>
+  <circle cx="180" cy="350" r="26" fill="#FF9FD2"/>
+  <circle cx="245" cy="305" r="18" fill="#9FE5FF"/>
+  <circle cx="305" cy="360" r="24" fill="#C6B5FF"/>
+  <text x="270" y="88" text-anchor="middle" fill="#F4F6FF" font-size="36" font-family="Arial, sans-serif" font-weight="700">Scene 1</text>
+  <text x="270" y="130" text-anchor="middle" fill="#D8DCFF" font-size="24" font-family="Arial, sans-serif">Dream Capture</text>
+  <text x="270" y="884" text-anchor="middle" fill="#E4E8FF" font-size="22" font-family="Arial, sans-serif">Wake up + voice input</text>
+</svg>
